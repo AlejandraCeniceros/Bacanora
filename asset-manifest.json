@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bacanora/static/css/main.d1b05096.chunk.css",
+    "main.js": "/bacanora/static/js/main.dfe08d40.chunk.js",
+    "main.js.map": "/bacanora/static/js/main.dfe08d40.chunk.js.map",
+    "runtime-main.js": "/bacanora/static/js/runtime-main.906a2f7e.js",
+    "runtime-main.js.map": "/bacanora/static/js/runtime-main.906a2f7e.js.map",
+    "static/js/2.95f0bd3a.chunk.js": "/bacanora/static/js/2.95f0bd3a.chunk.js",
+    "static/js/2.95f0bd3a.chunk.js.map": "/bacanora/static/js/2.95f0bd3a.chunk.js.map",
+    "index.html": "/bacanora/index.html",
+    "precache-manifest.8b86c0fc4654838fefb64e3991cb18bf.js": "/bacanora/precache-manifest.8b86c0fc4654838fefb64e3991cb18bf.js",
+    "service-worker.js": "/bacanora/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/bacanora/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.95f0bd3a.chunk.js.LICENSE.txt": "/bacanora/static/js/2.95f0bd3a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/bacanora/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.906a2f7e.js",
+    "static/js/2.95f0bd3a.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.dfe08d40.chunk.js"
+  ]
+}
