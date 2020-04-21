@@ -58,25 +58,26 @@ export default class App extends Component{
           datasets: [{
               label: 'Casos confirmados (hasta el día de hoy)',
               fill: false,
-              data: arr_cofirmed,
-              backgroundColor: 'rgba(0, 0, 255, 1)',
-              borderColor: 'rgba(0, 0, 255, 255)',
+              data: arr_cofirmed,backgroundColor: 'rgba(1, 0, 0, 1)',
+              borderColor: 'rgba(255, 0, 0, 1)',
               borderWidth: 2
           },
           {
             label: 'Fallecimientos (hasta el día de hoy)',
             fill: false,
             data: arr_deaths,
-            backgroundColor: 'rgba(255, 0, 0, 1)',
-            borderColor: 'rgba(255, 0, 0, 255)',
+            backgroundColor: 'rgba(0, 1, 0, 1)',
+          borderColor: 'rgba(0, 1, 0, 1)',
+            
             borderWidth: 2
         },
         {
           label: 'Pacientes recuperados (hasta el día de hoy)',
           fill: false,
           data: arr_recovereds,
-          backgroundColor: 'rgba(0, 255, 0, 1)',
-          borderColor: 'rgba(0, 255, 0, 255)',
+          
+          backgroundColor: 'rgba(0, 0, 0, 1)',
+              borderColor: 'rgba(1, 1, 255, 255)',
           borderWidth: 2
       }]
       },
