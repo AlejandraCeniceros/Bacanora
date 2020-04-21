@@ -36,7 +36,71 @@ export default class App extends Component{
 render() {
      const {data} = this.state;
      const {date, confirmed, deaths, recovered} = data;
-     console.log(this.state.data);
+     
+     console.log(this.state);
+
+     const arr_cofirmed = arr.map(e =>{
+       return e.confirmed;
+     });
+
+     const arr_dates = arr.map(e =>{
+       return e.date;
+     });
+
+     const arr_deaths = arr.map(e =>{
+       return e.deaths;
+     });
+
+     const arr_recovereds = arr.map(e =>{
+       return e.recovered;
+     });
+
+     const myChart = new Chart(this.state.context, {
+       type: 'line',
+       data: {
+           labels: arr_dates,
+           datasets: [{
+               label: 'Casos confirmados',
+               fill: false,
+               data: arr_cofirmed,
+               backgroundColor: 'rgba(22, 10, 0, 11)',
+               borderColor: 'rgba(22, 10, 0, 11)',
+               borderWidth: 2
+           },
+           {
+             label: 'Fallecimientos',
+             fill: false,
+             data: arr_deaths,
+             backgroundColor: 'rgba(22, 10, 0, 11)',
+             borderColor: 'rgba(22, 10, 0, 11)',
+             borderWidth: 2
+         },
+         {
+           label: 'Pacientes recuperados',
+           fill: false,
+           data: arr_recovereds,
+           backgroundColor: 'rgba(22, 10, 0, 11)',
+           borderColor: 'rgba(22, 10, 0, 11)',
+           borderWidth: 2
+       }]
+       },
+       options: {
+           scales: {
+               yAxes: [{
+                   ticks: {
+                       beginAtZero: true
+                   }
+               }]
+           }
+       }
+   });
+
+
+
+
+
+
+     /* */
      return (
         <Fragment>
 
@@ -55,7 +119,7 @@ render() {
                 <div className="text-secondary"><strong>Recuperados</strong></div>
                 <br/>
                 <canvas id="myChart" ref={c => this.canvas = c} width="400" height="400"></canvas>
-                <br/>
+                 <br/>
                 <footer>Datos tomados de "The Center for Systems Science and Engineering (CSSE) at JHU", public api: https://github.com/pomber/covid19</footer>
               </div>
             </div>
