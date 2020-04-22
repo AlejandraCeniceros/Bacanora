@@ -50,7 +50,7 @@ export default class App extends Component{
     });
     
 
-
+// eslint-disable-next-line
     const myChart = new Chart(this.state.context, {
       type: 'line',
       data: {
@@ -58,7 +58,8 @@ export default class App extends Component{
           datasets: [{
               label: 'Casos confirmados (hasta el día de hoy)',
               fill: false,
-              data: arr_cofirmed,backgroundColor: 'rgba(1, 0, 0, 1)',
+              data: arr_cofirmed,
+              backgroundColor: 'rgba(1, 0, 0, 1)',
               borderColor: 'rgba(255, 0, 0, 1)',
               borderWidth: 2
           },
@@ -95,10 +96,11 @@ export default class App extends Component{
     return (
        <Fragment>
 
+          <div className="col text-center">
           <div className="container">
           <h1>Covid19 México</h1>
           <div className="row">
-            
+          </div>
               <div className="col text-center">
                 <div className="display-1">{date}</div>
                 <div className="text-secondary"><strong>Fecha del último reporte</strong></div>
@@ -107,15 +109,21 @@ export default class App extends Component{
                 <div className="display-1">{deaths}</div>
                 <div className="text-secondary"><strong>Fallecimientos</strong></div>
                 <div className="display-1">{recovered}</div>
-                <div className="text-secondary"><strong>Pacientes recuperados</strong></div>
+                <div className="text-secondary"><strong>Pacientes recuperados</strong>                <br/>
+</div>
+                <br/>
+                <br/>
                 <br/>
                 <canvas id="myChart" ref={c => this.canvas = c} width="400" height="400"></canvas>
                 <br/>
                 <h1>Covid19 en el mundo</h1>
                 <Map/>
                 <br/>
+                <div className="col text-center">
+
                 <footer>Datos tomados de "The Center for Systems Science and Engineering (CSSE) at JHU", public api: https://github.com/pomber/covid19</footer>
-              </div>
+                </div>
+                </div>
             </div>
   
           </div>
