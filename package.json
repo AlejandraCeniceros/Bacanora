@@ -10,7 +10,7 @@
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
     "country-code-lookup": "0.0.17",
-    "mapbox-gl": "^1.9.1",
+    "mapbox-gl": "^1.13.3",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
